@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -13,6 +13,8 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+
+import {RiContactsLine} from "react-icons/ri";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -51,6 +53,10 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
+        <Nav.Item>
+            <img  width ="60" height ="50"style={{borderRadius:"5px",backgroundColor:"none"}} src="https://i.ibb.co/X42GPb4/AM-Logo-2.png"/>  
+        </Nav.Item>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -68,6 +74,8 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
+
+            
 
             <Nav.Item>
               <Nav.Link
@@ -89,6 +97,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/Contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <RiContactsLine style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 

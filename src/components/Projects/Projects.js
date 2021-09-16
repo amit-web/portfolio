@@ -20,6 +20,20 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={"https://i.ibb.co/SNSGcB2/Screenshot-1204.png"}
+              isBlog={false}
+              title="Skyscanner Clone"
+              techstack ="TechStack :- HTML,CSS,Javascript,Reactjs,Redux, MaterialUI "
+              description=" Skyscanner is a metasearch engine and travel agency based in Edinburgh, Scotland. The site is available in over 30 languages and is used by 100 million people per month. 
+           
+               We had to given time constrainet of 5 days to clone this website.There are four members were working on this project."
+              link="https://github.com/ravishukla86044/skyscanner"
+              link1 ="https://skyscanner-mu.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Hotstar}
