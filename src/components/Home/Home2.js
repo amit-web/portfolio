@@ -3,18 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
 
-
-import {
-  AiFillGithub,
-  
-  AiOutlineTwitter,
-
-  AiOutlineMail
-  
-  
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import {FiPhoneCall } from "react-icons/fi";
+import { FiPhoneCall } from "react-icons/fi";
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -25,41 +16,27 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I am a passionate Full-Stack Web Developer, skilled in building single-page applications using ReactJs and several UI libraries.
+            Enthusiastic Full Stack Web Developer skilled in MERN Stack. Highly passionate about building web applications and confident enough to learn new things with a curious mind, A team player, Seeking a challenging position with any organization.
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> JavaScript, ReactJs, NodeJs, Express and MongoDB. </b>
-              </i>
+            
               <br />
+              <br />I am passionate about solving real world problems  and always eager to connect with other people. &nbsp;
+              
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also intrested to solve{" "}
-                <b className="purple">
-                Data structures and Algorithm Problems.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js</b>
-              </i>
+             
+            
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img width="270" style={{borderRadius:"40px"}} height=""src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                width="270"
+                style={{ borderRadius: "40px" }}
+                height=""
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+              />
             </Tilt>
           </Col>
         </Row>
@@ -100,31 +77,35 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-             
             </ul>
           </Col>
         </Row>
 
         <Row>
-
-        <Col md={12} className="home-about-social">
-          
+          <Col md={12} className="home-about-social">
             <p>
+              <FiPhoneCall />
 
-            <FiPhoneCall/>
-            
-              <span style={{marginLeft:"10px",marginRight:"10px",fontSize:"17px"}} className="white">8617342954 </span>
+              <span
+                style={{
+                  marginLeft: "10px",
+                  marginRight: "10px",
+                  fontSize: "17px",
+                }}
+                className="white"
+              >
+                8617342954{" "}
+              </span>
 
-              <AiOutlineMail/>
-              <span style={{marginLeft:"10px",fontSize:"17px"}} className="white">mehtaamitpro@gmail.com</span>
+              <AiOutlineMail />
+              <span
+                style={{ marginLeft: "10px", fontSize: "17px" }}
+                className="white"
+              >
+                mehtaamitpro@gmail.com
+              </span>
             </p>
-
-            
-
-        
-            
           </Col>
-
         </Row>
       </Container>
     </Container>
