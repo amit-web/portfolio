@@ -34,6 +34,20 @@ function Projects() {
               link1 ="https://skyscanner-mu.vercel.app/"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={"https://i.ibb.co/vhm7mvC/Screenshot-1211.png"}
+              isBlog={false}
+              title="Hirist Clone"
+              techstack ="TechStack :- HTML,CSS,Javascript,Reactjs"
+              description=" It starts with a seed of an idea. Then that seed germinates into a thought. And finally, that thought begins to grow in your mind like a tree seeking sunshine!It was with a similar idea that hirist was born and now that idea has grown into a platform that helps jobseekers connect with their dream job. 
+           
+               We had to given time constrainet of 5 days to clone this website.There are four members were working on this project."
+              link="https://github.com/amit-web/Project-hirist-clone"
+              link1 ="https://hiristclone.netlify.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Hotstar}
